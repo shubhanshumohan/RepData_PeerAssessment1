@@ -77,7 +77,7 @@ minterval<-as.numeric(select(filter(summ_data,steps==m),interval))
 
 The 5-minute interval that,on average,contains the maximum numbe of steps is 835.
 
-##Code to describe and show a strategy for imputing missing data
+## Code to describe and show a strategy for imputing missing data
 
 ```r
 nmiss<-sum(is.na(data$steps))
@@ -85,7 +85,7 @@ nmiss<-sum(is.na(data$steps))
 
 The number of rows containing NA values are 2304 
 
-###imputing missing values
+### imputing missing values
 
 ```r
 id<-is.na(data$steps)
@@ -93,7 +93,7 @@ data[id,1]<-mean(data$steps,na.rm=TRUE)
 ```
 The missing values have been imputed with the mean of the steps.
 
-##Histogram of the total number of steps taken each day after missing values are imputed
+## Histogram of the total number of steps taken each day after missing values are imputed
 
 ```r
 group_data<-group_by(data,date)
