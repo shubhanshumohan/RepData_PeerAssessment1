@@ -104,7 +104,7 @@ mtext("The missing values have been imputed with the mean",outer=FALSE)
 
 ![](PA1_template_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
 
-##Panel plot comparing the average number of steps taken per 5-minute interval across weekdays and weekends
+## Panel plot comparing the average number of steps taken per 5-minute interval across weekdays and weekends
 
 ```r
 data<-transform(data,date=as.Date(date))
